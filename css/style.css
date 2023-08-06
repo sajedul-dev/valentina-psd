@@ -1,0 +1,694 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --perafont:18px;
+
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+/* <!-- ============================= navbar part start here ======================= --> */
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.logo{
+    cursor: pointer;
+}
+nav{
+    padding: 30px 0;
+    position: absolute;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 555;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_wrapper ul{
+    display: flex;
+    gap: 27px;
+}
+.nav_wrapper ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+    position: relative;
+}
+.nav_wrapper ul li a:hover{
+    color: #e0497e;
+}
+.nav_wrapper ul li a::after{
+    position: absolute;
+    content: url(images/hover_img.png);
+    left: 50%;
+    bottom: -40px;
+    transform: translateX(-50%);
+    transition: all linear 0.3s;
+    opacity: 0;
+}
+.nav_wrapper ul li a:hover::after{
+    bottom: -30px;
+    opacity: 1;
+}
+.common_btn a{
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #d50a51;
+    padding: 14px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d50a51;
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition: all linear 0.3s;
+}
+.common_btn a:hover{
+    color: var(--white);
+    background-color: red;
+}
+.common_btn a i{
+    margin-right: 8px;
+}
+/* <!-- ============================= banner part start here ======================= --> */
+
+#banner{
+    background-image: url(images/valentina-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fdeff5;
+    border-bottom: 1px solid #d50a51;
+}
+.banner_wrapper{
+    display: flex;
+    gap: 30px;
+}
+.banner_img{
+    width: 570px;
+    position: relative;
+}
+.banner_img img{
+    position: absolute;
+    bottom: 0;
+    left: -35px;
+}
+.banner_content{
+    width: 570px;
+    padding: 225px 0 145px 0;
+    text-align: center;
+}
+.banner_content h2{
+    font-size: 61px;
+    font-weight: 600;
+    color: #8a5e3b;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.banner_content h1{
+    margin-top: -10px;
+    font-size: 84px;
+    font-weight:400;
+    color: #d50a51;
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+}
+.banner_content p{
+    font-size: 16px;
+    font-weight:400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    margin-top: 30px;
+}
+.banner_content a{
+    margin-top: 64px;
+}
+/* <!-- ============================= history part start here ======================= --> */
+
+#history{
+    padding: 80px 0;
+    border-bottom: 1px solid #d50a51;
+}
+.history_wrapper{
+    display: flex;
+    gap: 30px;
+}
+.history_img{
+    width: 570px;
+}
+.history_content{
+    width: 570px;
+}
+.common_heading{
+    margin-left: 53px;
+    position: relative;
+}
+.common_heading::after{
+    position: absolute;
+    left: -50px;
+    top: -30px;
+    content: url(images/love_shape.png);
+}
+.common_heading h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #666;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.common_heading h3{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #d50a51;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 15px;
+}
+.history_content p{
+    font-size: var(--perafont);
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+    margin-top: 60px;
+}
+/* <!-- ============================= proposal part start here ======================= --> */
+
+#proposal{
+    background-image: url(images/proposal_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 180px 0;
+    background-color: #fffae1;
+}
+.prop_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.prop_content{
+    width: 570px;
+    height: 100px;    
+}
+.common_heading h2{
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+.prop_content p{
+    padding-top: 60px;
+    font-size: var(--perafont);
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+.btn{
+    display: flex;
+    margin-top: 27px;
+    gap: 25px;
+}
+.prop_img{
+    width: 470px;
+    position: relative;
+}
+.prop_img img{
+    position: absolute;
+    bottom: -350px;
+    left: 0;
+}
+/* <!-- ============================= couple ticket part start here ======================= --> */
+
+#couple{
+    padding: 200px 0;
+}
+.couple_wrapper{
+    display: flex;
+    gap: 30px;
+}
+.couple_img{
+    width: 570px;
+    height: 100px;
+}
+.couple_img img{
+    padding-right: 100px;
+}
+.couple_content{
+    text-align: right;
+    width: 570px;
+    height: 100px;
+}
+.couple_content p{
+    padding-left: 100px;
+    padding-top: 60px;
+    font-size: var(--perafont);
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+/* <!-- ============================= offers/service part start here ======================= --> */
+
+#offers_service{
+    padding: 100px 0;
+    background-color: #fef9fc;
+    border-bottom: 1px solid #d50a51;
+}
+.offers_service_wrapper{
+    display: flex;
+    gap: 10px;
+    margin-top: 150px;
+}
+.service{
+    width: 370px;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.service p{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+.music_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: 25px;
+    gap: 5px;
+}
+.music_main{
+    width: 390px;
+    border-bottom: 1px solid #d50a51;
+    cursor: pointer;
+}
+.romantic_music:hover{
+    background-color: #f1f1f1;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+    
+}
+.romantic_music{
+    padding: 30px;
+    border-radius: 5px ;
+    transition: all linear 0.3s;
+}
+.romantic_music h4{
+    font-size: 20px;
+    color: #d50a51;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+}
+.romantic_music i{
+    color: #e13d7c;
+    padding-right: 20px;
+    font-size: 30px;
+}
+.romantic_music p{
+    padding-top: 30px;
+    font-size: var(--perafont);
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+
+/* <!-- ============================= shorts part start here ======================= --> */
+
+#shots{
+    padding: 60px 0;
+    border-bottom: 1px solid #d50a51;
+
+}
+.shots_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.shots_main{
+    width: 770px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.shots_item{
+    width: 370px;
+    height: 425px;
+    background-color: yellow;
+    overflow: hidden;
+    position: relative;
+}
+.shots_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.shots_item .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.884);
+    padding: 15px;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.shots_details{
+    width: 370px;
+    height: 100px;
+    text-align: right;
+}
+.shots_details h2{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    color: #d50a51;
+}
+.shots_details p{
+    padding-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+.shots_icon_item{
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    transition: all linear 0.3s;
+}
+.shots_icon_item:hover{
+    background-color: #d50a51;
+    border: 1px solid #d50a51;
+    cursor: pointer;
+}
+.shots_icon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.shots_action h4{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: capitalize;
+}
+.shots_action_item{
+    color: var(--white);
+}
+.btn{
+    justify-content: flex-end;
+}
+.shots_action_main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.shots_action{
+    margin-top: 100px;
+}
+.shots_item:hover .overlay{
+    opacity: 1;
+}
+/* <!-- ============================= love part start here ======================= --> */
+
+#love{
+    padding: 50px 0;
+    height: 250px;
+    width: 100%;
+    background-image: url(../images/love_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.love_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.love_main{
+    text-align: center;
+    cursor: pointer;
+}
+.love_main h3{
+    color: #d50a51;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 5px;
+    font-size: 50px;
+}
+.love_main span{
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 25px;
+    color: #444;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* <!-- ============================= ceo part start here ======================= --> */
+
+#ceo{
+    padding: 100px 0;
+}
+.ceo_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.ceo_details{
+    width: 570px;
+    height: 290px;
+    background-color: #fffae2;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all linear 0.3s;
+    border: 1px solid #d50a51;
+}
+.ceo_details:hover{
+    box-shadow: 10px 10px 5px #aaaaaa;
+    cursor: pointer;
+}
+.ceo_details p{
+    font-size: var(--perafont);
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    line-height: 24px;
+}
+.ceo_img{
+    display: flex;
+}
+.ceo_img img{
+    padding-top: 20px;
+    cursor: pointer;
+}
+.bio{
+    padding: 52px 0 0 22px;
+    gap: 10px;
+}
+.bio h3{
+    font-size: var(--perafont);
+    font-weight: 600;
+    color: #222;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.bio span{
+    font-size: var(--perafont);
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+/* <!-- ============================= newsletter part start here ======================= --> */
+
+#newsletter{
+    margin-bottom: -60px;
+    position: relative;
+}
+.newsletter_wrapper{
+    border-radius: 70px;
+    padding: 30px 100px;
+    background-color: #d50a51;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news_text_main{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+    width: 370px;
+}
+.news_icon i{
+    font-size: 50px;
+}
+.news_text h3{
+    font-size: 47px;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+.news_text span{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.news_form{
+    width: 570px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.input_group input{
+    width: 230px;
+    padding: 15px 0;
+    text-align: center;
+    color: var(--white);
+    /* background-color: transparent; */
+    border: 1px solid var(--white);
+    text-transform: capitalize;
+}
+.input_group{
+    display: flex;
+}
+/* .input_group input:focus-visible{
+    outline: none;
+} */
+/* .input_group input::placeholder{
+    color: var();
+} */
+.input_group button{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 15px ;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* <!-- ============================= footer part start here ======================= --> */
+
+#footer{
+    padding: 80px 0;
+    background-color: #fce0ed;
+    border-bottom: 1px solid #d50a51;
+}
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 10px;
+    margin-top: 130px;
+}
+.location_main{
+    width: 330px;
+    display: flex;
+    align-items: center;
+}
+.location_logo i{
+    color: #d50a51;
+    font-size: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.location_details h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+    padding-right: 10px;
+}
+.location_main{
+    position: relative;
+}
+.location_main span{
+    position: absolute;
+    top: -110px;
+    left: 30px;
+    content: "";
+}
+.social_icon h3{
+    text-align: center;
+    font-size: 20px;
+    color: #d50a51;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 30px 0;
+}
+.icon_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.icon_box i{
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #d50a51;
+    border: 1px solid #d50a51;
+    transition: all linear 0.3s;
+}
+.icon_box i:hover{
+    background-color: #d50a51;
+    color: var(--white);
+}
+
+/* =============================== copywrite part start here ============================ */
+
+#copywrite{
+    padding: 25px 0;
+    background-color: #fce1ed;
+}
+#copywrite p{
+    text-align: center;
+    color: #444;
+}
+
+    /* ========================= font family link ============================ */
+
+    /* font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Great Vibes', cursive; 
+    font-family: 'Open Sans', sans-serif;*/
