@@ -24,7 +24,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* <!-- ============================= navbar part start here ======================= --> */
 
 .container{
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .logo{
@@ -200,8 +200,7 @@ nav{
     background-image: url(images/proposal_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 180px 0;
-    background-color: #fffae1;
+    padding: 150px 0;
 }
 .prop_wrapper{
     display: flex;
@@ -235,6 +234,7 @@ nav{
     position: relative;
 }
 .prop_img img{
+    object-fit: cover;
     position: absolute;
     bottom: -350px;
     left: 0;
@@ -250,10 +250,11 @@ nav{
 }
 .couple_img{
     width: 570px;
-    height: 100px;
+    padding-right: 100px;
 }
 .couple_img img{
-    padding-right: 100px;
+    width: 100%;
+    object-fit: cover;
 }
 .couple_content{
     text-align: right;
@@ -261,13 +262,31 @@ nav{
     height: 100px;
 }
 .couple_content p{
-    padding-left: 100px;
-    padding-top: 60px;
+    padding-left: 60px 0 0 100px;
     font-size: var(--perafont);
     font-weight: 400;
     color: #444;
     font-family: 'Open Sans', sans-serif;
     line-height: 24px;
+}
+.shots_details {
+    padding: 100px 0;
+}
+.shots_details p {
+    text-align: center;
+}
+.shots_wrapper {
+    align-items: center;
+}
+.shots_item {
+    width: 100%;
+}
+.common_btn a {
+    padding: 9px 12px;
+    font-size: 13px;
+}
+.shots_main {
+    margin-left: 75px;
 }
 /* <!-- ============================= offers/service part start here ======================= --> */
 
@@ -309,8 +328,6 @@ nav{
 .romantic_music:hover{
     background-color: #f1f1f1;
     box-shadow: 10px 10px 5px #aaaaaa;
-
-    
 }
 .romantic_music{
     padding: 30px;
@@ -343,10 +360,10 @@ nav{
 #shots{
     padding: 60px 0;
     border-bottom: 1px solid #d50a51;
-
 }
 .shots_wrapper{
     display: flex;
+    align-items: center;
     column-gap: 30px;
 }
 .shots_main{
@@ -354,6 +371,7 @@ nav{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
 }
 .shots_item{
     width: 370px;
@@ -448,8 +466,6 @@ nav{
 
 #love{
     padding: 50px 0;
-    height: 250px;
-    width: 100%;
     background-image: url(../images/love_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;

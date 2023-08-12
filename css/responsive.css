@@ -1,0 +1,633 @@
+
+/* ======================= extra small device ===================== */
+
+@media screen and (max-width:575.98px) {
+
+    /* ================ navbar operation =============== */
+
+    .nav_wrapper{
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .nav_wrapper ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ================ banner operation =============== */
+
+    .banner_img img{
+        display: none;
+    }
+    .banner_content{
+        padding-top: 450px;
+        margin: 0 115px;
+    }
+    .banner_content h2{
+        font-size: 45px;
+        padding: 25px 0;
+    }
+    .banner_content h1{
+        font-size: 30px;
+        padding: 25px auto;
+    }
+    .banner_content p {
+        font-size: 24px;
+    }
+    .banner_content a {
+        margin-top: 35px;
+        font-size: 16px;
+    }
+
+    /* ================ history part operation =============== */
+
+    .history_img {
+        display: none;
+    }
+    .common_heading {
+        text-align: center;
+        margin: 0 50px;
+    }
+    .history_content p {
+        line-height: 24px;
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    /* ================ proposal part operation =============== */
+
+    #proposal {
+        padding: 60px 0;
+        background: none;
+    }
+    .prop_img {
+        display: none;
+    }
+    .prop_content p {
+        padding: 30px;
+        text-align: center;
+    }
+    .btn {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+
+    /* ================ couple part operation =============== */
+
+    .couple_img {
+        display: none;
+    }
+    .couple_content p {
+        font-size: 18px;
+        padding: 30px;
+        text-align: center;
+    }
+    .couple_content {
+        padding: 150px 0;
+    }
+
+    /* ================ offers/service operation =============== */
+
+    #offers_service {
+        padding: 50px 0;
+    }
+    .offers_service_wrapper {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .service p{
+        text-align: center;
+        padding: 25px;
+        font-size: 18px;
+    }
+    .romantic_music p {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    /* ================ shorts part operation =============== */
+
+    .shots_main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shots_wrapper {
+        flex-direction: column;
+    }
+    .shots_main {
+        width: 370px;
+        margin-right: 70px;
+    }
+    /* ================ Love part operation =============== */
+
+    #love {
+        background: none;
+    }
+    .love_wrapper {
+        margin: 100px 50px;
+    }
+    .love_wrapper {
+        margin-top: 150px;
+        padding: 0 50px;
+        column-gap: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* ================ ceo part operation =============== */
+
+    #ceo {
+        padding: 10px 0;
+        margin-bottom: 50px;
+    }
+    .ceo_wrapper {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .ceo_details {
+        width: 400px;
+        height: 350px;
+    }
+
+    /* ================ newsletter operation =============== */
+
+    #newsletter{
+        padding: 50px 0;
+        background-color: blueviolet;
+    }
+    .news_text h3{
+        font-size: 20px;
+    }
+    .news_text span {
+        font-size: 10px;
+    }
+    .newsletter_wrapper {
+        flex-direction: column;
+        background: none;
+    }
+    .news_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* ================ footer part operation =============== */
+
+    .location_main {
+        flex-direction: column;
+    }
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .location_details h4 {
+        text-align: center;
+    }
+    .location_main span {
+        top: -251px;
+        left: 76px;
+    }
+}
+/* ============================= Small device ============================ */
+
+@media(min-width:576px) and (max-width:767.98px){
+
+        /* ================ navbar operation =============== */
+    
+        .nav_wrapper{
+            flex-direction: column;
+            row-gap: 16px;
+        }
+        .nav_wrapper ul{
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        /* ================ banner operation =============== */
+
+        .banner_img img {
+            position: absolute;
+            bottom: 160px;
+            width: 280px;
+            left: 20px;
+        }
+        .banner_content{
+            padding-top: 450px;
+            margin-right: 50px;
+        }
+        .banner_content h2{
+            font-size: 45px;
+            padding: 25px 0;
+        }
+        .banner_content h1{
+            font-size: 37px;
+            padding: 25px 0;
+        }
+        .banner_content p {
+            font-size: 14px;
+        }
+        .banner_content a {
+            margin-top: 35px;
+            font-size: 16px;
+        }
+    
+        /* ================ history part operation =============== */
+
+        .history_img {
+            width: 295px;
+        }
+        .history_wrapper {
+            flex-direction: column;
+        }
+        .common_heading {
+            text-align: center;
+            margin: 0 50px;
+        }
+        .history_content p {
+            line-height: 24px;
+            padding: 0 35px;
+            text-align: center;
+        }
+    
+        /* ================ proposal part operation =============== */
+        .prop_img img {
+            top: 80px;
+            left: -136px;
+            width: 331px;
+        }
+        .prop_wrapper {
+            flex-direction: column;
+        }
+        #proposal {
+            padding: 60px 0;
+            background: none;
+        }
+        .prop_content p {
+            padding: 30px;
+            text-align: center;
+        }
+        .btn {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 25px;
+        }
+    
+        /* ================ couple part operation =============== */
+        .couple_content {
+            padding: 25px 0;
+        }
+        .couple_img {
+            display: none;
+        }
+        .couple_wrapper {
+            flex-direction: column;
+        }
+        .couple_wrapper {
+            flex-direction: column;
+        }
+        .couple_content p {
+            font-size: 18px;
+            padding: 30px;
+            text-align: center;
+        }
+        .couple_content {
+            padding: 150px 0;
+        }
+    
+        /* ================ offers/service operation =============== */
+    
+        #offers_service {
+            padding: 50px 0;
+        }
+        .offers_service_wrapper {
+            flex-direction: column;
+        }
+        .service {
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+        .service p{
+            text-align: center;
+            padding: 25px;
+            font-size: 18px;
+        }
+        .romantic_music p {
+            font-size: 14px;
+            padding: 10px 25px;
+        }
+    
+        /* ================ shorts part operation =============== */
+    
+        .shots_main {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .shots_wrapper {
+            flex-direction: column;
+        }
+        .shots_main {
+            width: 500px;
+            margin-right: 70px;
+        }
+        /* ================ Love part operation =============== */
+    
+        #love {
+            background: none;
+        }
+        .love_wrapper {
+            margin: 100px 50px;
+        }
+        .love_wrapper {
+            margin-top: 150px;
+            padding: 0 50px;
+            column-gap: 27px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* ================ ceo part operation =============== */
+    
+        #ceo {
+            padding: 10px 0;
+            margin-bottom: 50px;
+        }
+        .ceo_wrapper {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 50px;
+        }
+        .ceo_details {
+            width: 500px;
+            height: 350px;
+        }
+    
+        /* ================ newsletter operation =============== */
+    
+        #newsletter{
+            padding: 50px 0;
+            background-color: blueviolet;
+        }
+        .news_text h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        .news_text span {
+            font-size: 10px;
+            text-align: center;
+        }
+        .newsletter_wrapper {
+            flex-direction: column;
+            background: none;
+        }
+        .news_form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        /* ================ footer part operation =============== */
+    
+        .location_main {
+            flex-direction: column;
+        }
+        .footer_wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+        .location_details h4 {
+            text-align: center;
+        }
+        .location_main span {
+            top: -251px;
+            left: 76px;
+        }
+}
+/*=================== Medium device =================== */
+@media(min-width:768px) and (max-width:991.98px){
+
+    /* ================ navbar operation =============== */
+
+    .nav_wrapper{
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .nav_wrapper ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ================ banner operation =============== */
+
+    .banner_img img {
+        position: absolute;
+        bottom: 160px;
+        width: 350px;
+        left: 20px;
+    }
+    .banner_content{
+        padding-top: 450px;
+        margin-right: 50px;
+    }
+    .banner_content h2{
+        font-size: 45px;
+        padding: 25px 0;
+    }
+    .banner_content h1{
+        font-size: 37px;
+        padding: 25px 0;
+    }
+    .banner_content p {
+        font-size: 14px;
+    }
+    .banner_content a {
+        margin-top: 35px;
+        font-size: 16px;
+    }
+
+    /* ================ history part operation =============== */
+
+    .history_img {
+        width: 700px;
+    }
+    .history_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .common_heading {
+        text-align: center;
+    }
+    .history_content p {
+        line-height: 24px;
+        padding: 0 35px;
+        text-align: center;
+    }
+
+    /* ================ proposal part operation =============== */
+    .prop_img img {
+        top: 90px;
+        left: 250px;
+        width: 331px;
+    }
+    .prop_wrapper {
+        flex-direction: column;
+    }
+    #proposal {
+        padding: 60px 0;
+        background: none;
+    }
+    .prop_content p {
+        padding: 30px;
+        text-align: center;
+    }
+    .btn {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+
+    /* ================ couple part operation =============== */
+    .couple_content {
+        padding: 25px 0;
+    }
+    .couple_img {
+        display: none;
+    }
+    .couple_wrapper {
+        flex-direction: column;
+    }
+    .couple_wrapper {
+        flex-direction: column;
+    }
+    .couple_content p {
+        font-size: 18px;
+        padding: 30px;
+        text-align: center;
+    }
+    .couple_content {
+        padding: 150px 0;
+    }
+
+    /* ================ offers/service operation =============== */
+
+    #offers_service {
+        padding: 50px 0;
+    }
+    .offers_service_wrapper {
+        flex-direction: column;
+    }
+    .service {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    .service p{
+        text-align: center;
+        padding: 25px;
+        font-size: 18px;
+    }
+    .romantic_music p {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+
+    /* ================ shorts part operation =============== */
+
+    .shots_main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .shots_wrapper {
+        flex-direction: column;
+    }
+    .shots_main {
+        width: 700px;
+        margin-right: 70px;
+    }
+    /* ================ Love part operation =============== */
+
+    .love_wrapper {
+        margin: 100px 50px;
+    }
+    .love_wrapper {
+        margin-top: 150px;
+        padding: 0 50px;
+        column-gap: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* ================ ceo part operation =============== */
+
+    #ceo {
+        padding: 10px 0;
+        margin-bottom: 50px;
+    }
+    .ceo_wrapper {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+    }
+    .ceo_details {
+        width: 700px;
+        height: 350px;
+    }
+
+    /* ================ newsletter operation =============== */
+
+    #newsletter{
+        padding: 50px 0;
+        background-color: blueviolet;
+    }
+    .news_text h3{
+        font-size: 20px;
+        text-align: center;
+    }
+    .news_text span {
+        font-size: 10px;
+        text-align: center;
+    }
+    .newsletter_wrapper {
+        flex-direction: column;
+        background: none;
+    }
+    .news_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /* ================ footer part operation =============== */
+
+    .location_main {
+        flex-direction: column;
+    }
+    .footer_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .location_details h4 {
+        text-align: center;
+    }
+    .location_main span {
+        top: -251px;
+        left: 76px;
+    }
+}
+
+
+
+
+    
