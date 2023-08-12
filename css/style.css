@@ -291,14 +291,13 @@ nav{
 /* <!-- ============================= offers/service part start here ======================= --> */
 
 #offers_service{
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: #fef9fc;
     border-bottom: 1px solid #d50a51;
 }
 .offers_service_wrapper{
     display: flex;
     gap: 10px;
-    margin-top: 150px;
 }
 .service{
     width: 370px;
