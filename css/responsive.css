@@ -19,9 +19,12 @@
     .banner_img img{
         display: none;
     }
+    .banner_wrapper {
+        gap: 0;
+    }
     .banner_content{
         padding-top: 450px;
-        margin: 0 115px;
+        margin: 0 100px;
     }
     .banner_content h2{
         font-size: 45px;
@@ -58,7 +61,6 @@
 
     #proposal {
         padding: 60px 0;
-        background: none;
     }
     .prop_img {
         display: none;
@@ -80,6 +82,9 @@
     .couple_img {
         display: none;
     }
+    .couple_wrapper {
+        padding-top: 175px;
+    }
     .couple_content p {
         font-size: 18px;
         padding: 30px;
@@ -99,6 +104,7 @@
     }
     .service {
         width: 100%;
+        padding-top: 281px;
         height: 100%;
         cursor: pointer;
     }
@@ -126,6 +132,7 @@
         width: 370px;
         margin-right: 70px;
     }
+    
     /* ================ Love part operation =============== */
 
     #love {
@@ -154,8 +161,8 @@
         row-gap: 50px;
     }
     .ceo_details {
-        width: 400px;
-        height: 350px;
+        width: 265px;
+        height: 470px;
     }
 
     /* ================ newsletter operation =============== */
@@ -194,6 +201,15 @@
     .location_main span {
         top: -251px;
         left: 76px;
+    }
+    .icon_box {
+        column-gap: 1px;
+    }
+
+    /* ====================== copywrite part ========================= */
+    #copywrite p {
+        font-size: 12px;
+        color: red;
     }
 }
 /* ============================= Small device ============================ */
